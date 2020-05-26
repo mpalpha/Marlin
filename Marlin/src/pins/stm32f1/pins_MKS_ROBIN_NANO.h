@@ -128,7 +128,7 @@
   #ifndef Y_SERIAL_TX_PIN
       #define Y_SERIAL_TX_PIN PA6 // E1_STEP_PIN
   #endif
-      #ifndef Y_SERIAL_RX_PIN
+  #ifndef Y_SERIAL_RX_PIN
   #define Y_SERIAL_RX_PIN PA1 // E1_DIR_PIN
   #endif
 
@@ -146,8 +146,8 @@
       #define E0_SERIAL_RX_PIN PA1 // E1_DIR_PIN
   #endif
 
-// Reduce baud rate to improve software serial reliability
-#define TMC_BAUD_RATE 19200
+  // Reduce baud rate to improve software serial reliability
+  #define TMC_BAUD_RATE 19200
 #endif // TMC2208 || TMC2209
 
 //
