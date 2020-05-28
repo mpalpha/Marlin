@@ -2305,15 +2305,20 @@
   #define E1_SERIAL_TX_PIN PA9 // wifi PA9
   #define E1_SERIAL_RX_PIN PA9 // wifi PA9
 
-  #define  X_SLAVE_ADDRESS 0
-  #define  Y_SLAVE_ADDRESS 0
-  #define  Z_SLAVE_ADDRESS 0
+
+  // | = add jumper
+  // : = remove jumper
+  // M1 is always closest to 12/24v
+  //              <- board power M1 M2 M3 -> endstops
+  #define  X_SLAVE_ADDRESS 3  // |  |  :
+  #define  Y_SLAVE_ADDRESS 2  // :  |  :
+  #define  Z_SLAVE_ADDRESS 1  // |  :  :
   #define X2_SLAVE_ADDRESS 0
   #define Y2_SLAVE_ADDRESS 0
-  #define Z2_SLAVE_ADDRESS 0
+  #define Z2_SLAVE_ADDRESS 0  // :  :  :
   #define Z3_SLAVE_ADDRESS 0
   #define Z4_SLAVE_ADDRESS 0
-  #define E0_SLAVE_ADDRESS 0
+  #define E0_SLAVE_ADDRESS 0  // :  :  :
   #define E1_SLAVE_ADDRESS 0
   #define E2_SLAVE_ADDRESS 0
   #define E3_SLAVE_ADDRESS 0
